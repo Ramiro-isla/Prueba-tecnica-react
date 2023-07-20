@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import Header from "../Header/Header";
 import "./ReactCats.scss";
 
 const ReactCats = () => {
@@ -12,6 +13,7 @@ const ReactCats = () => {
 
   return (
     <div className="ReactCats">
+    <Header/>
       {catImageUrl ? (
         <img src={catImageUrl} alt="Cat" style={{ maxWidth: "500px" }} />
       ) : (
